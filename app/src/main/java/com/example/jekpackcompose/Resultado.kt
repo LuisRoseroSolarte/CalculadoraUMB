@@ -21,6 +21,11 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.*
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
+
 
 
 class Resultado : ComponentActivity() {
@@ -40,7 +45,7 @@ fun Operacion(numero1: Double, numero2: Double, modifier: Modifier = Modifier) {
     val context = LocalContext.current // Obtener contexto para la navegación
     Column( horizontalAlignment = Alignment.CenterHorizontally, // Centrar horizontalmente todos los elementos
         verticalArrangement = Arrangement.SpaceEvenly, // Espacio uniforme entre elementos
-        modifier = Modifier.fillMaxSize().padding(16.dp) // Añadir padding alrededor
+        modifier = Modifier.fillMaxSize().background(Color(0xFFADD8E6)).padding(16.dp) // Añadir padding alrededor
     ) {
         Spacer(modifier = Modifier.height(25.dp))
         Text(text = "Resultados",fontSize =20.sp,fontWeight = FontWeight.Bold)
