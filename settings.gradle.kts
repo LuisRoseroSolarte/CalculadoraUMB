@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Calculadora"
+rootProject.name = "jekpackCompose"
 include(":app")
